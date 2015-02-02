@@ -3,7 +3,7 @@ Flowdock-userstyle
 
 The flowdock web app is fugly.  This tries to unfuglify it.
 
-# Based on https://github.com/mebe/Flowdock-userstyle
+* Based on https://github.com/mebe/Flowdock-userstyle
   * ( http://flowdock.uservoice.com/forums/36827-general/suggestions/5407290-allow-for-custom-css )
 
 * Only tested in the "new" flowdock UI
