@@ -1,3 +1,15 @@
+/* Flowdock is fugly.  It desperately needs unfuglification. */
+/* Based on https://github.com/mebe/Flowdock-userstyle */
+/* ( http://flowdock.uservoice.com/forums/36827-general/suggestions/5407290-allow-for-custom-css ) */
+/* Only tested in FF34 on Linux with User Style Manager 1.1.1 */
+/* Only tested in the "new" flowdock UI */
+
+/* To use in the app, remove the next two lines and the last line of the file, and copy to
+   ~/Library/Application Support/Flowdock */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document url-prefix('https://www.flowdock.com/app/') {
+
 /*Common styles*/
 
 .content {
@@ -148,11 +160,42 @@ menu#users {
 }
 
 #chat li[class*="message"]:last-child {
-  padding-bottom: 1.3em !important;
+  padding-bottom: 0em !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 3px !important;
+  border-bottom-color: #00A651 !important;
 }
 
 #chat li.time-separator[class*="message"] {
   border-top-width: 1px !important;
+}
+
+#chat li[class*="message"] .message-actions {
+  display: inline-block !important;
+  visibility: visible !important;
+  float: right !important;
+}
+
+#chat li[class*="message"] .message-actions a {
+  font-size: 0.7rem !important;
+}
+
+#chat li[class*="message"] .message-actions a .fa-stack {
+  display: block !important;
+}
+
+#chat li[class*="message"] .message-actions > li {
+  margin-left: 0rem !important;
+}
+
+#chat li[class*="message"] .bubble-container a {
+  transition: opacity 0s !important;
+  opacity: 1 !important;  /* This completely removes the effect of the hover (or it would, if the below worked. */
+}
+
+/* Dammit, styling svg (after the fact) *still* doesn't work?! */
+#chat li[class*="message"] .bubble-container svg {
+  visiblity: visible !important;
 }
 
 #chat li.me[class*="message"] .message-author {
@@ -162,7 +205,8 @@ menu#users {
 #chat li[class*="message"] .message-author {
   float: left !important;
   position: inherit !important;
-  left: 2.75em !important;
+  left: 0em !important;
+  margin-left: 2.75em !important;
   visibility: visible !important;
   margin-right: 0 !important;
   display: inherit !important;
@@ -171,13 +215,16 @@ menu#users {
 #chat li[class*="message"] time.timestamp {
   visibility: visible !important;
   font-size: inherit !important;
-  margin-left: -6.5em !important;
-  position: inherit !important;
+  left: -2.75em !important;
+  position: relative !important;
   float: left !important;
+  vertical-align: top !important;
+  text-align: right !important;
+  width: 4em !important;
 }
 
 #chat li[class*="message"] div.content {
-  padding-left: 1.25em;
+  padding-left: 0.5em;
 }
 
 /*
@@ -373,6 +420,15 @@ menu#users {
 /*================*/
 /*user list styles*/
 
+#tab-list div.org-link a {
+    display: inline !important;
+}
+
+#tab-list div.scrollbar {
+    display: inline-block !important;
+}
+
+
 #user-list {
   top: 44px !important;
   padding: 1em !important;
@@ -401,4 +457,6 @@ menu#users {
 
 #user-list #invite-button {
   margin-top: 1em !important;
+}
+
 }
