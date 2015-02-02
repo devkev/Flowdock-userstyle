@@ -3,8 +3,8 @@ Flowdock-userstyle
 
 The flowdock web app is fugly.  This tries to unfuglify it.
 
-Based on https://github.com/mebe/Flowdock-userstyle
-( http://flowdock.uservoice.com/forums/36827-general/suggestions/5407290-allow-for-custom-css )
+# Based on https://github.com/mebe/Flowdock-userstyle
+  * ( http://flowdock.uservoice.com/forums/36827-general/suggestions/5407290-allow-for-custom-css )
 
 * Only tested in the "new" flowdock UI
 
@@ -15,6 +15,10 @@ Based on https://github.com/mebe/Flowdock-userstyle
   * Only tested in FF34 on Linux with User Style Manager 1.1.1
 
 * To use in the flowdock "app" (which is actually just a browser), copy userstyle.css into `~/Library/Application Support/Flowdock` and follow the instructions to remove the necessary lines from the file.
+  * Not tested at all yet, feedback welcome
+
+* Chrome
+  * No idea (yet), feedback welcome
 
 ## Todo
 
